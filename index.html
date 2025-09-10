@@ -10,6 +10,7 @@
       margin: 0;
       padding: 0;
       background-color: #fff8f0;
+      padding-bottom: 70px; /* to prevent footer overlap */
     }
 
     header {
@@ -42,8 +43,17 @@
       text-align: center;
     }
 
+    #menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
     .menu-item {
-      margin: 20px 0;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     footer {
@@ -59,6 +69,15 @@
     h2 {
       color: #d35400;
     }
+
+    .dine-option {
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 500px;
+    }
   </style>
 </head>
 <body>
@@ -71,6 +90,7 @@
   <nav>
     <a href="#about">About</a>
     <a href="#menu">Menu</a>
+    <a href="#dinein">Dine-In</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -81,6 +101,7 @@
 
   <section id="menu">
     <h2>Our Menu</h2>
+    <!-- Food Items -->
     <div class="menu-item">
       <h3>🍕 Margherita Pizza</h3>
       <p>Classic pizza with fresh mozzarella, basil, and tomato sauce.</p>
@@ -93,13 +114,50 @@
       <h3>🥗 Caesar Salad</h3>
       <p>Crisp romaine, parmesan, croutons, and creamy Caesar dressing.</p>
     </div>
+    <div class="menu-item">
+      <h3>🍝 Pasta Alfredo</h3>
+      <p>Creamy white sauce pasta topped with herbs and parmesan.</p>
+    </div>
+    <!-- Beverages -->
+    <div class="menu-item">
+      <h3>🥤 Fresh Lemonade</h3>
+      <p>Refreshing homemade lemonade with a mint twist.</p>
+    </div>
+    <div class="menu-item">
+      <h3>☕ Cappuccino</h3>
+      <p>Rich espresso with steamed milk and foam.</p>
+    </div>
+    <div class="menu-item">
+      <h3>🍹 Tropical Smoothie</h3>
+      <p>Blend of mango, pineapple, and orange juice.</p>
+    </div>
+  </section>
+
+  <section id="dinein">
+    <h2>Dine-In Options</h2>
+    <div class="dine-option">
+      <h3>🍽️ Family Dining</h3>
+      <p>Perfect for family gatherings with spacious seating and a warm atmosphere.</p>
+    </div>
+    <div class="dine-option">
+      <h3>🌆 Rooftop Dining</h3>
+      <p>Enjoy your meal with a beautiful city view under the stars.</p>
+    </div>
+    <div class="dine-option">
+      <h3>💼 Business Lunch</h3>
+      <p>A quiet and professional space for meetings and quick lunches.</p>
+    </div>
+    <div class="dine-option">
+      <h3>❤️ Couple’s Corner</h3>
+      <p>Romantic setup with candlelight dining for two.</p>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
     <p>📍 123 Main Street, Foodie City</p>
-    <p>📞 (123) 456-7890</p>
-    <p>📧 contact@deliciousbites.com</p>
+    <p>📞 <a href="tel:+11234567890">(123) 456-7890</a></p>
+    <p>📧 <a href="mailto:contact@deliciousbites.com">contact@deliciousbites.com</a></p>
   </section>
 
   <footer>
